@@ -1,5 +1,14 @@
 import React from 'react';
+import '../assets/css/index.css';
+import {Hero} from '../components/Hero';
+import Layout from '../components/Layout';
 
-export default function Home(): JSX.Element {
-  return <div>Hello world!</div>;
-}
+const Index = (): JSX.Element => {
+  return (
+    <Layout>
+      <Hero />
+    </Layout>
+  );
+};
+
+export default Index;
