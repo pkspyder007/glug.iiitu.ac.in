@@ -11,6 +11,25 @@ nav .logo img {
   width: 150px;
 }
 
+nav strong {
+  text-align: center;
+}
+
 nav .nav-links a {
   margin-right: 16px;
+}
+
+@media (max-width: 750px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav .logo img {
+    height: 80px;
+    width: 150px;
+  }
+
+  .nav-links {
+    margin: 12px;
+  }
 }

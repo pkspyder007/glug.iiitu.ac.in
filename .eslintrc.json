@@ -153,6 +153,12 @@
         }
       }
     ],
-    "strict": ["error", "global"]
+    "strict": ["error", "global"],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   }
 }

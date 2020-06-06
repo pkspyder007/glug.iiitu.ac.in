@@ -3,7 +3,7 @@ import '../assets/css/layout.css';
 import Footer from './Footer';
 import Header from './Header';
 
-export default function Layout({children}: any) {
+export default function Layout({children}: any): JSX.Element {
   return (
     <>
       <Header />
