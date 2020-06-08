@@ -1,14 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
-
 * {
   margin: 0;
   padding: 0;
-  /* font-family: 'Poppins', sans-serif; */
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
 }
 
 a {
   text-decoration: none;
   color: #f38e18;
+}
+
+pre::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+pre::-webkit-scrollbar-track {
+  background: orange; /* color of the tracking area */
+}
+pre::-webkit-scrollbar-thumb {
+  background-color: #e48b25ef; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgba(255, 123, 0, 0.863); /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: none; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  /* background-color: #f38e18;  */
+  /* color of the scroll thumb */
+  /* border-radius: 20px; */
+  /* roundness of the scroll thumb */
+  /* border: 3px solid rgba(255, 123, 0, 0.863); */
+  /* creates padding around scroll thumb */
 }

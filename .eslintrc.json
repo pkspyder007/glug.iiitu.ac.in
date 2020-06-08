@@ -31,6 +31,7 @@
     "no-unused-expressions": "error",
     "no-const-assign": "error",
     "array-bracket-spacing": ["error", "never"],
+    "@typescript-eslint/no-explicit-any": "off",
     "block-spacing": ["error", "always"],
     "brace-style": [
       "error",

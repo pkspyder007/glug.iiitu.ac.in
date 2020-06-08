@@ -29,7 +29,7 @@ export const Hero = (): JSX.Element => {
         <h3>Contributing to GLUG-IIITU</h3>
         <p>
           This website is powered by Gatsby which uses React.js. You can find the code for this
-          website on our github page. To contribute follow the instructions in the <a>README.md</a>{' '}
+          website on our github page.To contribute follow the instructions in the <a>README.md</a>
           on its github page.
           <br /> <br />
           Apart from this GLUG-IIITU holds multiple other FOSS projects on github. You can start by

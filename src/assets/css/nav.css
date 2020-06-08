@@ -4,11 +4,12 @@ nav {
   justify-content: space-around;
   align-items: center;
   box-shadow: 1px 1px #f38e18;
+  padding-top: 12px;
 }
 
 nav .logo img {
-  height: 100px;
-  width: 150px;
+  height: 60px;
+  /* width: 150px; */
 }
 
 nav strong {
@@ -25,8 +26,8 @@ nav .nav-links a {
   }
 
   nav .logo img {
-    height: 80px;
-    width: 150px;
+    height: 100px;
+    width: 180px;
   }
 
   .nav-links {

@@ -10,6 +10,9 @@ module.exports = {
     },
   },
   plugins: [
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-remark-images',
     {
       resolve: 'gatsby-plugin-eslint',
       options: {
@@ -20,6 +23,54 @@ module.exports = {
           emitWarning: true,
           failOnError: false,
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/utils/typography',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: '${__dirname}/src/content',
+        name: 'markdown-pages',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+        extensions: ['.mdx', '.md'],
+        plugins: [
+          {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+              path: '${__dirname}/src/content',
+              name: 'markdown-pages',
+            },
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1200,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              showLineNumbers: true,
+            },
+          },
+        ],
       },
     },
   ],

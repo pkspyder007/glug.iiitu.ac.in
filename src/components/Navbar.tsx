@@ -7,7 +7,7 @@ export default function Navbar(): JSX.Element {
     <nav className="container">
       <div className="logo">
         <Link to="/">
-          <img src={require('../assets/img/glugiiitu.png')} alt="GLUG IIITU LOGO" />
+          <img src={require('../assets/img/logo.jpg')} alt="GLUG IIITU LOGO" />
         </Link>
       </div>
       <strong>Indian Institute of Information Technology Una</strong>
@@ -15,8 +15,8 @@ export default function Navbar(): JSX.Element {
         <Link to="/" activeClassName="active">
           Home
         </Link>
-        <Link to="/blog" activeClassName="active">
-          Blog
+        <Link to="/wiki" activeClassName="active">
+          Wiki
         </Link>
         <Link to="/contact" activeClassName="active">
           Contact
