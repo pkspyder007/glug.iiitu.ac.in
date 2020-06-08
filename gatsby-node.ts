@@ -1,4 +1,4 @@
-exports.createPages = async ({actions, graphql, reporter}) => {
+exports.createPages = async ({actions, graphql, reporter}): any => {
   const {createPage} = actions;
 
   const blogPostTemplate = require.resolve('./src/templates/blogTemplate.tsx');
